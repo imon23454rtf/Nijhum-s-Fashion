@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladies Hand Bag</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #ffccff;
+        }
+        .header img {
+            max-width: 100px;
+            margin: 0 auto;
+        }
+        .header h1 {
+            margin: 0;
+            color: #ff3399;
+        }
+        .description {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ffebf5;
+        }
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: 20px 0;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel img {
+            min-width: 100%;
+            height: auto;
+        }
+        .features {
+            background-color: #ffe6ff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .features h2 {
+            color: #ff66b3;
+        }
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features li {
+            margin: 10px 0;
+        }
+        .call-to-action {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .call-to-action button {
+            background-color: #ff4da6;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        .contact {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffe6ff;
+        }
+        .contact h2 {
+            color: #ff66b3;
+        }
+        .contact p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="Nij.png" alt="Logo">
+            <h1>Ladies Hand Bag</h1>
+        </div>
+        <div class="description">
+            ❤প্রোডাক্ট হাতে পেয়ে চেক করে তারপর পেমেন্ট করবেন, এবং পছন্দ না হলে ডেলিভারি চার্জ দিয়ে প্রোডাক্ট ফেরত দিতে পারবেন।✔ অর্ডার করতে এখনি ম্যাসেজ করুন অথবা হোয়াটসঅ্যাপ করুন।💖
+        </div>
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="Bag 1.jpeg" alt="Ladies Hand Bag Image 1">
+                <img src="Bag 2.jpeg" alt="Ladies Hand Bag Image 2">
+                <img src="Bag3.jpeg" alt="Ladies Hand Bag Image 3">
+            </div>
+        </div>
+        <div class="features">
+            <h2>Key Features and Benefits</h2>
+            <ul>
+                <li>Women Nice Shoulder Bag</li>
+                <li>Size: 34*31*15 cm</li>
+                <li>Colors: Black, Blue, Pink, Maroon, and Purple</li>
+                <li>Material: Nylon</li>
+                <li>Lining Material: Polyester</li>
+            </ul>
+        </div>
+        <div class="call-to-action">
+            🎯 এ সুযোগ সীমিত সময়ের জন্য 🎯🏠 সারা বাংলাদেশ ক্যাশ অন হোম ডেলিভারি 🔥<br>
+            ✅প্রোডাক্ট সম্পর্কে বিস্তারিত জানতে এবং অর্ডার কনফার্ম করতে নিচের বাটনে চাপ দিন।<br>
+            <button onclick="window.location.href='https://wa.me/8801723568878'">WhatsApp</button>
+            <button onclick="window.location.href='order-link-here'">Order Now</button>
+        </div>
+        <div class="contact">
+            <h2>Contact Information</h2>
+            <p>WhatsApp: +8801723-568878</p>
+        </div>
+    </div>
+    <script>
+        const track = document.querySelector('.carousel-track');
+        let index = 0;
+        
+        function moveCarousel() {
+            const images = document.querySelectorAll('.carousel img');
+            index++;
+            if (index >= images.length) {
+                index = 0;
+            }
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
+        
+        setInterval(moveCarousel, 3000);
+    </script>
+</body>
+</html>
